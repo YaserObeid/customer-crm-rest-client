@@ -26,7 +26,7 @@ public class DemoAppConfig implements WebMvcConfigurer {
 		InternalResourceViewResolver viewResolver = 
 				new InternalResourceViewResolver();
 		
-		viewResolver.setPrefix("/WEB-INF/view");
+		viewResolver.setPrefix("/WEB-INF/view/");
 		viewResolver.setSuffix(".jsp");
 		
 		return viewResolver;
