@@ -1,0 +1,13 @@
+1- add src/main/resources/application.properties
+2- create class AppConfig 
+                implements 
+                WebMvcConfigurer
+    - Beans:
+    ViewResolver
+    RestTemplate
+
+    - add resourceHandler: /asset/**
+    
+3- create class MySringConfigDispatcherServletInitializer 
+            extends 
+            AbstractAnnotationConfigDispatcherServletInitializer
