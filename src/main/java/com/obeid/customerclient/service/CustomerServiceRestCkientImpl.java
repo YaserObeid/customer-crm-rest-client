@@ -93,7 +93,7 @@ public class CustomerServiceRestCkientImpl implements CustomerService {
 	public void deleteCustomer(int theId) {
 		
 		//make call
-		restTemplate.delete(crmRestUrl);
+		restTemplate.delete(crmRestUrl + "/" + theId);
 
 	}
 
